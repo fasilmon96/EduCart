@@ -1,0 +1,113 @@
+ :root {
+   --primary-color:  rgb(50 123 265)
+ }
+
+ .section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vh;
+ }
+
+
+.right-section{
+  width: 400px;
+  background-color: white;
+  border-radius: 15px;
+  padding:40px 0;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, .2);
+  
+}
+
+.right-section h4{
+  font-size: 20px;
+  color: var(--primary-color);
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+}
+
+.input-group{
+  width: 300px;
+  margin:30px auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.input-group label{
+  color: rgb(185, 174, 19);
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  transition: 0.5s ease-in-out;
+  
+}
+
+.input-group input{
+  border: none;
+  padding: 7px;
+  margin-top: 5px;
+  font-size: 16px;
+  outline: none;
+ 
+ 
+  color: var(--primary-color);
+  border-bottom:1px solid #c9c9c98a;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label
+
+ {
+  color: var(--primary-color);
+  top: -10px;
+  font-size:18px;
+ 
+  
+}
+
+.input-group input:focus,
+.input-group input:valid{
+ border-color: var(--primary-color);
+}
+  .submit-section{
+    text-align: center;
+  }
+.submit-button{
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 0;
+  margin-top: 15px;
+  width: 300px;
+  cursor: pointer;
+  
+
+}
+span{
+  color: red;
+  font-size: 15px;
+  display: none;
+}
+
+input:invalid:focus ~ span{
+  display: block;
+ 
+}
+
+.submit-button1{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  margin-top: 15px;
+  width: 300px;
+  cursor: pointer;
+
+}
+
+

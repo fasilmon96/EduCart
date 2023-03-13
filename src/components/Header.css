@@ -1,0 +1,43 @@
+header {
+  background-color: rgb(38, 51, 63);
+  padding: 20px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+i {
+  font-size: 28px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+li {
+  width: 1400px;
+  width: 100%;
+  display: inline;
+  text-align: center;
+  position: relative;
+  left: 0;
+  padding: 0 40px;
+}
+
+li a:hover {
+  background-color: rgb(158, 95, 160);
+  padding: 5px 12px;
+  border-radius: 12px;
+}
+
+header button {
+  width: 26px;
+  background-color: rgb(10, 83, 218);
+  color: #fff;
+  margin-left: -16px;
+  border-radius: 6px;
+  position: absolute;
+}

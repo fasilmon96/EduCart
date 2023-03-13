@@ -1,0 +1,128 @@
+:root {
+  --primary-color: rgb(50 123 265);
+}
+
+.num1 {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 25px;
+  padding: 20px;
+}
+
+.product_container {
+  max-width: 300px;
+  margin-top: 60px;
+  background-color: #27293d;
+  position: relative;
+
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  display: inline-flex;
+  margin: 50px 12px;
+}
+
+.product_container::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+}
+.product_container.active::before,
+.product_container:hover::before {
+  width: 250px;
+  height: 250px;
+}
+
+.product_container.active::after,
+.product_container::after {
+  content: "";
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  bottom: -90px;
+  left: -90px;
+
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+}
+
+.product_container.active::after,
+.product_container:hover::after {
+  bottom: -35px;
+  left: -35px;
+}
+.product_container img {
+  width: 280px;
+  height: 210px;
+  margin: 40px 0;
+  object-fit: contain;
+  transform: translateY(15px);
+  transition: all 0.2s ease-in-out;
+}
+.product_container.active img,
+.product_container:hover img {
+  transform: translateY(-20px) scale(0.9);
+}
+
+.product_container .h3 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: -1px;
+  line-height: 19px;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+}
+
+.product_container.active .h3,
+.product_container:hover .h3 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 23px;
+  top: -25px;
+  transform: translateY(-25px) scale(0.9);
+}
+
+.product_container .button {
+  color: #fff;
+  background-color: rgba(255, 57, 143);
+  margin: 10px 0;
+  padding: 10px 15px;
+  position: relative;
+  top: 50px;
+  border: none;
+  border-radius: 4.5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.product_container.active .button,
+.product_container:hover .button {
+  top: -30px;
+}
+
+.h3 i{
+
+
+ position: relative;
+ left: -39px;
+ font-size: 21px;
+ top: -37px;
+ 
+}
+
+
+.product_container:hover i{
+  position: relative;
+top: -45px;
+left: -43px;
+}
